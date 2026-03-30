@@ -10,10 +10,10 @@ function YAxis(props){
             {ticks.map((tick, i) => (
                 <g key={i} transform={`translate(0, ${yScale(tick)})`}>
                     <line x2={-6} stroke="black" />
-<text style={{ textAnchor: 'end', fontSize: '10px', fontFamily: 'Times' }} x={-8} dy="0.32em">{tick}</text>
+<text style={{ textAnchor: 'end', fontSize: '10px', fontFamily: 'Arial' }} x={-8} dy="0.32em">{tick}</text>
                 </g>
             ))}
-            <text style={{ textAnchor: 'end', fontSize: '15px', fontFamily: 'Times'}} transform={`translate(20, 0)rotate(-90)`}>
+            <text style={{ textAnchor: 'end', fontSize: '15px', fontFamily: 'Arial'}} transform={`translate(20, 0)rotate(-90)`}>
                 {axisLable}
             </text>
         </g>

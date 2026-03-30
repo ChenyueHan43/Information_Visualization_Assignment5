@@ -33,12 +33,12 @@ function XAxis(props){
                 <g key={i} transform={`translate(${getX(tick)}, 0)`}>
                     {isLinear && <line y2={6} stroke="black" />}
                     {isLinear
-                        ? <text style={{ textAnchor: 'middle', fontSize: '10px', fontFamily: 'Times' }} y={18}>{tick}</text>
-                        : <text style={{ textAnchor: 'start', fontSize: '10px', fontFamily: 'Times' }} transform="rotate(75)" x={4} dy="0.32em">{tick}</text>
+                        ? <text style={{ textAnchor: 'middle', fontSize: '10px', fontFamily: 'Arial' }} y={18}>{tick}</text>
+                        : <text style={{ textAnchor: 'start', fontSize: '10px', fontFamily: 'Arial' }} transform="rotate(75)" x={4} dy="0.32em">{tick}</text>
                     }
                 </g>
             ))}
-            <text style={{ textAnchor: 'end', fontSize: '15px', fontFamily: 'Times' }} x={width} y={-12}>{axisLable}</text>
+            <text style={{ textAnchor: 'end', fontSize: '15px', fontFamily: 'Arial' }} x={width} y={-12}>{axisLable}</text>
         </g>
     } else {
         return <g></g>

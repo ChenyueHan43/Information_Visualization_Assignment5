@@ -39,7 +39,7 @@ const Charts = () => {
         return <pre>Loading...</pre>;
     };
     const WIDTH = 600;
-    const HEIGHT = 400;
+    const HEIGHT = 420;
     const margin = { top: 20, right: 20, bottom: 60, left: 35};
     const innerHeightScatter = HEIGHT - margin.top - margin.bottom;
     const innerHeightBar = HEIGHT - margin.top - margin.bottom-60;
