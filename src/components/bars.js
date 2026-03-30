@@ -1,7 +1,7 @@
 
 
 function Bars(props) {
-    const {data, xScale, yScale, height, selectedStation} = props;
+    const {data, xScale, yScale, height, selectedStation, setSelectedStation} = props;
 
     //Note: 
     //the if(data){...} means when data is not null, the component will return the bars; otherwise, it returns <g></g>
@@ -17,6 +17,8 @@ function Bars(props) {
                     fill={d.station === selectedStation ? 'red' : 'steelblue'}
                     stroke="black"
                     strokeWidth={1}
+                    onMouseEnter={() => setSelectedStation(d.station)}
+                    onMouseOut={() => setSelectedStation(null)}
                 />
             ))}
             </g>

@@ -92,7 +92,7 @@ const Charts = () => {
                 <Col>
                     <svg width={WIDTH} height={HEIGHT}>
                         <BarChart offsetX={margin.left} offsetY={margin.top} data={data} xScale={xScaleBar}
-                        yScale={yScaleBar} height={innerHeightBar} width={innerWidth} selectedStation={selectedStation}/>
+                        yScale={yScaleBar} height={innerHeightBar} width={innerWidth} selectedStation={selectedStation} setSelectedStation={setSelectedStation}/>
                     </svg>
                 </Col>
             </Row>
